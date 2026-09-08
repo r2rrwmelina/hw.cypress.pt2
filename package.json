@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --record --key 17897aeb-da37-46dd-b943-004a685675d1"
+    "test": "npx cypress run --browser chrome --record --key 17897aeb-da37-46dd-b943-004a685675d1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
