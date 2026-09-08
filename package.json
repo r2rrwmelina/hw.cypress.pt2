@@ -1,0 +1,20 @@
+{
+  "name": "hw.cypress.pt2",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Melina Gubasheva",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --record --key 17897aeb-da37-46dd-b943-004a685675d1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "cypress": "^16.0.0",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.6"
+  }
+}

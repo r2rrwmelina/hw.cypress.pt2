@@ -1,0 +1,13 @@
+{
+  "loginPage": {
+    "titleAuth": ".login__title",
+    "emailField": "input[name='email']",
+    "passwordField": "input[name='password']"
+  },
+  "homePage": {
+    "navbar": ".page-nav__day",
+    "movieCards": ".movie__info",
+    "seanceTime": ".movie-seances__time-block:nth-of-type(2)",
+    "byingTitle": ".buying__info-title"
+  }
+}
