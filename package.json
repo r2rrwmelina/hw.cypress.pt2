@@ -7,9 +7,16 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "cy:login": "npx cypress run --browser chrome --group login --ci-build-id 14 -s cypress/e2e/login.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1",
-    "cy:mainpage": "npx cypress run --browser chrome --group main page --ci-build-id 14 -s cypress/e2e/main-page-verification.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1",
-    "cy:booking": "npx cypress run --browser chrome --group booking --ci-build-id 14 -s cypress/e2e/ticket-booking.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1"
+    "cy:login": "npx cypress run --group login -s cypress/e2e/login.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1",
+    "cy:mainpage": "npx cypress run --group mainpage -s cypress/e2e/main-page-verification.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1",
+    "cy:booking": "npx cypress run --group booking -s cypress/e2e/ticket-booking.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1",
+    "cy:run:chrome": "npx cypress run --browser chrome",
+    "cy:run:edge": "npx cypress run --browser edge",
+    "cy:run:firefox": "npx cypress run --browser firefox",
+    "cy:parallel:browsers": "npm run cy:run:chrome & npm run cy:run:firefox",
+    "cy:spec1": "npx cypress run -s cypress/e2e/spec1",
+    "cy:spec2": "npx cypress run -s cypress/e2e/spec2",
+    "cy:parallel:specs": "npm run cy:spec1 & npm run cy:spec2"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

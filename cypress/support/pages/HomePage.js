@@ -5,6 +5,10 @@ export class HomePage {
     cy.get(selector.homePage.navbar).should("have.length", 7);
   }
 
+  chooseDay() {
+    cy.get(selector.homePage.day).click();
+  }
+
   checkMovies() {
     cy.get(selector.homePage.movieCards).should("have.length", 6);
   }
@@ -26,10 +30,14 @@ export class HomePage {
   }
 
   bookSeats(row, seat) {
+    this.chooseSeats(row, seat);
+    cy.contains("Забронировать").click();
+    cy.contains("Вы выбрали билеты:").should("be.visible");
+  }
+
+  chooseSeats(row, seat) {
     cy.get(
       `.buying-scheme__row:nth-of-type(${row}) > .buying-scheme__chair:nth-of-type(${seat})`,
     ).click();
-    cy.contains("Забронировать").click();
-    cy.contains("Вы выбрали билеты:").should("be.visible");
   }
 }

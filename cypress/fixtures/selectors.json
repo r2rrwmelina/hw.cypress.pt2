@@ -6,6 +6,7 @@
   },
   "homePage": {
     "navbar": ".page-nav__day",
+    "day": ".page-nav__day:nth-of-type(3)",
     "movieCards": ".movie__info",
     "seanceTime": ".movie-seances__time-block:nth-of-type(3)",
     "byingTitle": ".buying__info-title"
