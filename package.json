@@ -7,7 +7,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --browser chrome --record --key 17897aeb-da37-46dd-b943-004a685675d1"
+    "cy:login": "npx cypress run --browser chrome --group login --ci-build-id 14 -s cypress/e2e/login.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1",
+    "cy:mainpage": "npx cypress run --browser chrome --group main page --ci-build-id 14 -s cypress/e2e/main-page-verification.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1",
+    "cy:booking": "npx cypress run --browser chrome --group booking --ci-build-id 14 -s cypress/e2e/ticket-booking.cy.js --record --key 17897aeb-da37-46dd-b943-004a685675d1"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
